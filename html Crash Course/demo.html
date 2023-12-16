@@ -2,6 +2,12 @@
 <html>
   <head>
     <title>My Webpage</title>
+        <style>
+        td, table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
   </head>
   <body>
     <!-- Clickable Link in New Tab-->
@@ -58,6 +64,35 @@
     <aside>
         <p> This is the side content </p>
     </aside>
+
+        <table>
+        <caption> 
+            People and their fav sport
+        </caption>
+        <thead>
+            <th colspan="2"> Name </th>
+            <th> Fav Sport </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2"> Micah </td>
+                <td> Woodring </td>
+                <td> Soccer </td>
+            </tr>
+            <tr>
+                <td> Jill </td>
+                <td> Smith </td>
+                <td> Volleyball </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+            </tr>
+        </tfoot>
+    </table>
 
     <!-- Indication of anything at the end -->
     <footer>
