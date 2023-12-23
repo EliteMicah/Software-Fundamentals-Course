@@ -16,3 +16,25 @@ if (country == "CA" || country == "Cananda") {
 } else {
     alert("Thanks but we no need u");
 }
+
+/*
+const color = prompt("Enter fav color");
+
+switch (color) {
+    case "red": 
+        alert("red");
+        break;
+    case "blue":
+        alert("blue");
+        break;
+    case "orange":
+        alert("orange");
+        break;
+    case "yellow":
+        alert("yellow");
+        break;
+    default:
+        alert("Unknown Color");
+        break;
+}
+*/
