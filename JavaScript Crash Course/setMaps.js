@@ -44,3 +44,50 @@ const num = new Set(arr);
 const uniqueNumbers = Array.from(num);
 
 console.log(uniqueNumbers);
+
+// MAPS
+
+/*
+const m = new Map();
+// Map - Key, Value
+m.set("a", 3);
+m.set("b", 2);
+m.set("a", 4);
+
+console.log(m.get("a"));
+*/
+
+/*
+// Instead of doing a map
+const str = "Hello world my name is Micah";
+const freq = [];
+
+for (const char of str) {
+  let found = false;
+  for (const [idx, pair] of freq.entries()) {
+    const [key, value] = pair;
+    if (key == char) {
+      freq[idx] = [char, value + 1];
+      found = true;
+      break;
+    }
+  }
+  if (!found) freq.push([char, 1]);
+}
+
+console.log(freq);
+*/
+
+// Using a map
+const str = "Hello world my name is Micah";
+const freq = new Map();
+
+for (const char of str) {
+  if (freq.has(char)) {
+    freq.set(char, freq.get(char) + 1);
+  } else {
+    freq.set(char, 1);
+  }
+}
+
+console.log(freq.get(" "));
