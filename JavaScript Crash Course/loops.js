@@ -79,3 +79,22 @@ for (let i = 0; i < 2; i++) {
 }
 
 console.log(matrix);
+
+
+/*
+// Lesson 4
+let num;
+
+do {
+  num = Number(prompt("Enter a num 1-10"));
+} while (!(num >= 1 && num <= 10));
+
+console.log(num);
+*/
+
+while (true) {
+  const num = Number(prompt("Enter a num 1-10"));
+  if (num >= 1 && num <= 10) break;
+}
+
+console.log(num);
