@@ -24,3 +24,58 @@ for (let i = 0; i < str.length; i++) {
     break;
   }
 }
+
+
+/*
+// Lesson 2
+const strs = ["one", "two", "three"];
+const str = ["hello world"];
+
+// for (auto x : val) type of loop
+for (const str of strs) {
+  console.log(str);
+}
+
+for (const [i, str] of strs.entries()) {
+  console.log(i, str);
+} // logs the index with the string
+
+const [str1, str2, str3] = strs;
+console.log(str1, str2, str3);
+
+for (const char of str) {
+  console.log(char);
+}
+*/
+
+// Lesson 3
+const matrix = [];
+// for (let i = 0; i < 3; i++) {
+//   const numbers = [];
+
+//   // Runs only 3 times
+//   for (let j = i * 3; j < i * 3 + 3; j++) {
+//     numbers.push(j + 1); // 9 times
+//   }
+//   matrix.push(numbers); // 3 times
+// }
+
+for (let i = 0; i < 2; i++) {
+  const arr = [];
+
+  // Runs only 6 times
+  for (let j = 0; j < 3; j++) {
+    const numbers = [];
+    const start = i * 6 + j * 2 + 1;
+
+    for (let k = start; k < start + 2; k++) {
+      numbers.push(k);
+    }
+
+    arr.push(numbers);
+  }
+
+  matrix.push(arr);
+}
+
+console.log(matrix);
