@@ -7,7 +7,6 @@ Example:
 ~Program asks for number 3~ 
 ~User enters -5~ 
 ~Program shows an alert saying “The largest number was: 1”~ 
-
 */
 
 let counter = 0;
