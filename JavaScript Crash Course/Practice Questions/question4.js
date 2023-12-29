@@ -1,3 +1,17 @@
+/*
+Example 1: 
+Target = “timisgreat” 
+Delimiter = “-” 
+Spacing = “3” 
+~Program prints: “tim-isg-rea-t”~ notice the - exists after 3 characters
+
+Example 2: 
+Target = “coursecareers” 
+Delimiter = “|” 
+Spacing = “1” 
+~Program prints: “c|o|u|r|s|e|c|a|r|e|e|r|s”~ 
+/*
+
 let userString = "coursecareers";
 const delimiter = "|";
 // const spacing = 3;
