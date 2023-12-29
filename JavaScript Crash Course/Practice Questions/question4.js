@@ -10,7 +10,7 @@ Target = “coursecareers”
 Delimiter = “|” 
 Spacing = “1” 
 ~Program prints: “c|o|u|r|s|e|c|a|r|e|e|r|s”~ 
-/*
+*/
 
 let userString = "coursecareers";
 const delimiter = "|";
