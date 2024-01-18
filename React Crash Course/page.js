@@ -8,16 +8,56 @@ function Text({ content, strong }) {
 }
 */
 
+"use client";
+import { Post } from "@/components/Post";
+import { useState } from "react";
+
+export default function Home() {
+  const [count, setCount] = useState(0);
+
+  function onCount() {
+    setCount(count + 1);
+  }
+
+  return (
+    <>
+      <p>{count}</p>
+      <button onClick={onCount}>Count Up!</button>
+    </>
+  );
+}
+
+/*
 import { Post } from "@/components/Post";
 
 export default function Home() {
+  const posts = [
+    {
+      title: "My Post",
+      author: "Tim Ruscica",
+      content: "Best Developer",
+      following: false,
+    },
+    {
+      title: "My Post 2",
+      author: "Tim Ruscica",
+      content: "Testing things out",
+      following: false,
+    },
+    {
+      title: "My Post 3",
+      author: "Tim Ruscica",
+      content: "this is another post",
+      following: false,
+    },
+  ];
+
   return (
-    <div>
-      <Post
-        title="Tim is the best"
-        author="Tim"
-        content="Tim is the best teacher for everything programming"
-      />
-    </div>
+    <>
+      {posts.map((content, idx) => {
+        return <Post {...content} key={idx + Math.random()} />;
+      })}
+    </>
   );
 }
+*/
