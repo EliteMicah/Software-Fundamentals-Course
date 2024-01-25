@@ -6,11 +6,13 @@ export default function Home() {
   const [content, setContent] = useState("");
   const [author, setAuthor] = useState("");
   const [title, setTitle] = useState("");
-  const [posts, setPosts] = useState("");
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    console.log("run");
-  }, []);
+    if (content.length >= 10) {
+      alert("Your content is getting too long");
+    }
+  }, [content, author, title]);
 
   function addPost() {
     const newPost = {
@@ -32,19 +34,19 @@ export default function Home() {
         <input
           type="text"
           value={title}
-          oncChange={(e) => setTitle(e.target.value)}
+          onChange={(e) => setTitle(e.target.value)}
           placeholder="Tltle"
         />
         <input
           type="text"
           value={content}
-          oncChange={(e) => setContent(e.target.value)}
+          onChange={(e) => setContent(e.target.value)}
           placeholder="Content"
         />
         <input
           type="text"
           value={author}
-          oncChange={(e) => setAuthor(e.target.value)}
+          onChange={(e) => setAuthor(e.target.value)}
           placeholder="Author"
         />
         <button onClick={addPost}>Add Post</button>
