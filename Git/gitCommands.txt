@@ -24,3 +24,41 @@ git log
 // Creates new branch
 git checkout -b (name of branch)
 
+// Switches to master branch
+// All files under child branch will not exist unless switched back
+git checkout master
+
+// Switches to new branch called css
+git checkout -b css
+
+// Deletes css branch
+git branch -D css
+
+// Merges master branch to child branch
+git merge master
+
+// Merges child branch to master branch
+git merge (branch)
+
+// Creates a github remote page
+git remote add origin "https://github.com/techwithtim/demo.git"
+git branch -M main
+git push -u origin main
+
+// Gets all new files
+git pull origin main
+
+// Pushes changes to main
+git push origin main
+
+//
+
+
+
+
+
+
+
+
+
+
