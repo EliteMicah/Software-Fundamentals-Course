@@ -1,0 +1,26 @@
+//
+// Initializes empty git repository local on your computer
+git init
+
+// Shows changes and commits
+// Shows unsaved files that needs to be committed
+// Shows which branch you're on
+git status
+
+// Adds directory to staging area
+// (Ex. "git add test.txt")
+git add (name of directory)
+
+// Adds everything in current directory
+// Works well for adding many files
+git add .
+
+// Commits to main branch with a log msg
+git commit -m "init git repo and add test.txt"
+
+// Finds details of commits
+git log
+
+// Creates new branch
+git checkout -b (name of branch)
+
