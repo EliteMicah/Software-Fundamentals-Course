@@ -15,8 +15,11 @@ git add (name of directory)
 // Works well for adding many files
 git add .
 
-// Commits to main branch with a log msg
+// Commits to main branch with a log
 git commit -m "init git repo and add test.txt"
+
+// Commits to child branch with a log
+git commit -b "init git repo and add test.txt"
 
 // Finds details of commits
 git log
@@ -51,14 +54,10 @@ git pull origin main
 // Pushes changes to main
 git push origin main
 
-//
+// Merges child branch to master branch
+// Keeps history
+git merge master
 
-
-
-
-
-
-
-
-
-
+// Merges child branch to master branch at the head
+// Does not keep history
+git rebase master
