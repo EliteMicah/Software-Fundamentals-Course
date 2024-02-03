@@ -23,11 +23,10 @@ function Board({ squares, xIsNext, onPlay }) {
   return (
     <>
       {winner ? (
-        <p> Winner is: {winner}</p>
+        <p>Winner is: {winner}</p>
       ) : (
         <p>Next Player: {xIsNext ? "X" : "O"}</p>
       )}
-
       <div className="board-row">
         <Square value={squares[0]} onClick={() => onSquareClick(0)} />
         <Square value={squares[1]} onClick={() => onSquareClick(1)} />
@@ -55,6 +54,7 @@ function calculateWinner(squares) {
     [0, 3, 6],
     [1, 4, 7],
     [2, 5, 8],
+    [0, 4, 8],
     [2, 4, 6],
   ];
 
@@ -87,9 +87,9 @@ export default function Game() {
   const moves = history.map((squares, move) => {
     let description;
     if (move > 0) {
-      description = "Go to Move # " + move;
+      description = "Go to move # " + move;
     } else {
-      description = "Go to game Start";
+      description = "Go to game start";
     }
     return (
       <li key={move + Math.random()}>
