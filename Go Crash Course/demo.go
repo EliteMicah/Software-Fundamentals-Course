@@ -10,6 +10,11 @@ func main() {
 
 }
 
+// implicit assignment operator
+// x := -9
+// y := uint64(x)
+// fmt.Println(x, y)
+
 // Mac Go Command
 // go run demo.go
 // go build demo.go
@@ -23,3 +28,4 @@ func main() {
 // string ""
 // char ''
 // nill undefined or null
+
