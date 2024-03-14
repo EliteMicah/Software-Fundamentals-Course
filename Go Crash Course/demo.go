@@ -12,6 +12,7 @@ func main() {
 
 // Mac Go Command
 // go run demo.go
+// go build demo.go
 // ./demo
 
 // int Positive numbers
