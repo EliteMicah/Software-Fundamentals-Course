@@ -29,3 +29,15 @@ func main() {
 // char ''
 // nill undefined or null
 
+// x := 7  = variable creation
+// fmt.Println  = print line
+// ex. fmt.Println("Hello world", x)
+// fmt.Printf  = print formatted where 1st var is formatted
+// ex. fmt.Printf("The value of x is: %v\n", x)
+// %T  = variable type, %d  = integer
+// %b  = binary, %e  = scientific notation
+// %f = float, %s  = string rep
+// %.2f  = 2 levels of precision rounded
+// %10.2f  = 10 chars spaced with 2 precision
+// fmt.Sprintf("%10.2f%%", x)  = formats a string
+// ex. fmt.Println(y, y, y)
