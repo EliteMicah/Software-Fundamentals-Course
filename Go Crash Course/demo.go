@@ -63,25 +63,3 @@ func main() {
 //fmt.Println(math.Ceil(4.25))
 // 	x := "1111011"
 //	y, err := strconv.ParseInt(x, 2, 0)
-
-// IF STATEMENT
-// 	x := 2
-//	if x < 3 {
-//		fmt.Println(x)
-//	} else if x > 4 {
-//		fmt.Println("Greater than")
-//	} else {
-//		fmt.Println("Hi")
-//	}
-
-// SWITCH STATEMENT
-// a := 1
-// switch {
-// case a < 1:
-// 	fmt.Println("one")
-// 	fallthrough // Automatically goes to next case
-// case a > 2:
-// 	fmt.Println("two")
-// default:
-// 	fmt.Println("defualt")
-// }
