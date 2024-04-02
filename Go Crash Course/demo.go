@@ -41,3 +41,20 @@ func main() {
 // %10.2f  = 10 chars spaced with 2 precision
 // fmt.Sprintf("%10.2f%%", x)  = formats a string
 // ex. fmt.Println(y, y, y)
+
+// x := uint8(7)
+// y := 1000
+// z := x + uint8(y)
+// Wrong, should always convert small type or number to larger, not vice versa
+// z := int(x) + (y)
+// correct
+
+// 	str1 := "hi"
+//	str2 := 2
+//	both := str1 + fmt.Sprint(str2)
+//	fmt.Println(both)
+
+//fmt.Println(math.Ceil(4.25))
+
+// 	x := "1111011"
+//	y, err := strconv.ParseInt(x, 2, 0)
