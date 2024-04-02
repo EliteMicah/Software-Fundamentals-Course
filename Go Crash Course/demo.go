@@ -58,3 +58,12 @@ func main() {
 
 // 	x := "1111011"
 //	y, err := strconv.ParseInt(x, 2, 0)
+
+// 	x := 2
+//	if x < 3 {
+//		fmt.Println(x)
+//	} else if x > 4 {
+//		fmt.Println("Greater than")
+//	} else {
+//		fmt.Println("Hi")
+//	}
