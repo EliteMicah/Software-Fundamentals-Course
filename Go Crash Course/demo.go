@@ -15,11 +15,13 @@ func main() {
 // y := uint64(x)
 // fmt.Println(x, y)
 
+// GO COMMANDS
 // Mac Go Command
 // go run demo.go
 // go build demo.go
 // ./demo
 
+// VARIABLES
 // int Positive numbers
 // uint Negative numbers & positive
 // float64 Floating point value - decimal
@@ -29,6 +31,7 @@ func main() {
 // char ''
 // nill undefined or null
 
+// PRINTING
 // x := 7  = variable creation
 // fmt.Println  = print line
 // ex. fmt.Println("Hello world", x)
@@ -42,6 +45,7 @@ func main() {
 // fmt.Sprintf("%10.2f%%", x)  = formats a string
 // ex. fmt.Println(y, y, y)
 
+// VARIABLE TYPES
 // x := uint8(7)
 // y := 1000
 // z := x + uint8(y)
@@ -49,16 +53,18 @@ func main() {
 // z := int(x) + (y)
 // correct
 
+// SPRINT
 // 	str1 := "hi"
 //	str2 := 2
 //	both := str1 + fmt.Sprint(str2)
 //	fmt.Println(both)
 
+// STRING CONVERSION
 //fmt.Println(math.Ceil(4.25))
-
 // 	x := "1111011"
 //	y, err := strconv.ParseInt(x, 2, 0)
 
+// IF STATEMENT
 // 	x := 2
 //	if x < 3 {
 //		fmt.Println(x)
@@ -67,3 +73,15 @@ func main() {
 //	} else {
 //		fmt.Println("Hi")
 //	}
+
+// SWITCH STATEMENT
+// a := 1
+// switch {
+// case a < 1:
+// 	fmt.Println("one")
+// 	fallthrough // Automatically goes to next case
+// case a > 2:
+// 	fmt.Println("two")
+// default:
+// 	fmt.Println("defualt")
+// }
