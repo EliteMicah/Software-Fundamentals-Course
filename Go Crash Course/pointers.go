@@ -2,7 +2,22 @@ package main
 
 import "fmt"
 
+func test(pointerSlice *[]*int) { // Pointer to a slice that contains pointers to int objects
+	values := *pointerSlice
+
+	for _, value := range values {
+		value
+	}
+}
+
 func main() {
+
+	a := 1
+	b := 2
+
+	values := &[]*int{&a, &b}
+
+	fmt.Println(values)
 
 	fmt.Printf("\n")
 }
@@ -37,15 +52,3 @@ func main() {
 // fmt.Printf("%T", z)
 // **z Needs to dereference this twice because it is
 // a pointer to a pointer, hence the double **
-
-// func test(pointerSlice *[]*int) { // Pointer to a slice that contains pointers to int objects
-// 	values := *pointerSlice
-
-// 	for _, value := range values {
-// 		value
-// 	}
-// }
-// a := 1
-// b := 2
-// values := &[]*int{&a, &b}
-// fmt.Println(values)
