@@ -1,4 +1,4 @@
-//
+// () is used for example, do not include parenthesis ()
 // Initializes empty git repository local on your computer
 git init
 
@@ -44,7 +44,7 @@ git merge master
 git merge (branch)
 
 // Creates a github remote page
-git remote add origin "https://github.com/techwithtim/demo.git"
+git remote add origin "https://github.com/elitemicah/demo.git"
 git branch -M main
 git push -u origin main
 
