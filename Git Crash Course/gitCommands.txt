@@ -44,7 +44,7 @@ git merge master
 git merge (branch)
 
 // Creates a github remote page
-git remote add origin "https://github.com/elitemicah/demo.git"
+git remote add origin "https://github.com/EliteMicah/demo.git"
 git branch -M main
 git push -u origin main
 
