@@ -8,7 +8,6 @@ you should return 0.
 let strings = ["hello", "world", "tim", "a", "it"];
 let numbers = [5, 1];
 let result = [];
-let num = 0;
 
 solveArr(strings);
 
@@ -21,4 +20,4 @@ function solveArr(arr) {
   }
 }
 
-console.log(num, result);
+console.log(result.length, result);
