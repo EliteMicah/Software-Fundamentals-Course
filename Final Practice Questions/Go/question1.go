@@ -15,6 +15,7 @@ func main() {
 
 func twoLargest(arr []int) {
 
+	// Sorting in descending order
 	sort.Slice(arr, func(i, j int) bool {
 		return arr[j] < arr[i]
 	})
