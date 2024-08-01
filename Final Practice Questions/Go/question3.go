@@ -45,14 +45,13 @@ func main() {
 func topAuthors(books []Book) map[string]int {
 
 	authorSales := make(map[string]int)
-	minSales := 10000
 
 	for _, book := range books {
 		authorSales[book.Author] += book.Sales
 	}
 
 	for author, sales := range authorSales {
-		if sales < minSales {
+		if sales < 10000 {
 			delete(authorSales, author)
 		}
 	}
